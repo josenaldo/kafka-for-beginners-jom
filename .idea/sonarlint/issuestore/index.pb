@@ -38,3 +38,11 @@ w
 G.idea/sonarlint/issuestore/6/1/613d7a74df6d81682f147cb18f854820891af7d6,1\c\1cbd52fcdb551150fac35facee8012a585f99c23
 X
 (gradle/wrapper/gradle-wrapper.properties,f\b\fbe448ebfc3eb2d4e308f6b8b043666f5b57235e
+e
+5src/main/java/br/com/josenaldo/kfb/producer/Main.java,c\f\cfefd38f77794330aaaf997e0e093b40668212fa
+o
+?producers/src/main/java/br/com/josenaldo/kfb/producer/Main.java,0\f\0f8f8d6bf0c1ecc8e7ef59998c3fdddbac3ecec9
+z
+Jproducers/src/main/java/br/com/josenaldo/kfb/producer/MessageProducer.java,9\0\903efd755d80265332e9f1dd3595a6c2a8dc09a3
+A
+gradle.properties,2\a\2afbb999f001938c88fa43fc2ef52abf0f8213e4
