@@ -46,3 +46,9 @@ z
 Jproducers/src/main/java/br/com/josenaldo/kfb/producer/MessageProducer.java,9\0\903efd755d80265332e9f1dd3595a6c2a8dc09a3
 A
 gradle.properties,2\a\2afbb999f001938c88fa43fc2ef52abf0f8213e4
+E
+logs/testFile.log.log,6\2\6235f1a6e9ebf7983d346414df27ed0cb3ccc28e
+=
+.editorconfig,6\2\626a747c8694eaae66f2afb3d1a745b045782c70
+;
+Default.xml,e\f\efb900a02fe9989f1797057cf1464d621957bc07

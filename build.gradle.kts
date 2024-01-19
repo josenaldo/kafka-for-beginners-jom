@@ -23,9 +23,12 @@ subprojects {
     }
 
     val kafkaVersion = "3.6.1"
+    val logbackVersion = "1.2.3"
 
     dependencies {
         implementation(group="org.apache.kafka", name="kafka-clients", version=kafkaVersion)
+        implementation(group="ch.qos.logback", name="logback-classic", version= logbackVersion)
+
         testImplementation(platform("org.junit:junit-bom:5.9.2"))
         testImplementation("org.junit.jupiter:junit-jupiter")
     }

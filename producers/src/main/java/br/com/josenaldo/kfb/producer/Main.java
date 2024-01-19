@@ -1,18 +1,13 @@
 package br.com.josenaldo.kfb.producer;
 
-import java.util.concurrent.ExecutionException;
-
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         MessageProducer messageProducer = new MessageProducer(MessageProducer.propsMap(), "test-topic");
-        try {
-            messageProducer.publishMessageSync(null, "Hello World");
-        } catch (ExecutionException e) {
-            System.out.println("erro ao publicar mensagem: " + e.getMessage());
-        } catch (InterruptedException e) {
-            System.out.println("Thread interrompida " + e.getMessage());
-            Thread.currentThread().interrupt();
+
+        for (int i = 0; i < 10; i++) {
+            messageProducer.publishMessageSync("key2", "Sending message " + i);
         }
+        Thread.sleep(3000);
     }
 }
