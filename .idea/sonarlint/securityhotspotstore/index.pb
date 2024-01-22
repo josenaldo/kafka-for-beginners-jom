@@ -52,3 +52,7 @@ E
 .editorconfig,6\2\626a747c8694eaae66f2afb3d1a745b045782c70
 ;
 Default.xml,e\f\efb900a02fe9989f1797057cf1464d621957bc07
+~
+Nproducers/src/main/java/br/com/josenaldo/kfb/launcher/CommandLineLauncher.java,1\9\19e892cb4232212de75700a8a9b68574d099dcdb
+~
+Nproducers/src/main/java/br/com/josenaldo/kfb/launcher/CommandLineMessages.java,2\e\2ea19be78ead9dca1237ba36c4f1737984f845dd

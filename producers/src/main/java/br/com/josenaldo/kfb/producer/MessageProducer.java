@@ -12,14 +12,16 @@ public class MessageProducer {
 
     private static final Logger logger = LoggerFactory.getLogger(MessageProducer.class);
 
-    private final String topicName;
-
     private final KafkaProducer<String, Object> kafkaProducer;
+
+    private final String topicName;
 
     public static Map<String, Object> propsMap() {
         return Map.of(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092,localhost:9093,localhost:9094",
                       ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName(),
-                      ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName()
+                      ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName(),
+                      ProducerConfig.ACKS_CONFIG, "all", ProducerConfig.RETRIES_CONFIG, 10,
+                      ProducerConfig.RETRY_BACKOFF_MS_CONFIG, 3000
         );
     }
 
@@ -37,6 +39,10 @@ public class MessageProducer {
     public MessageProducer(Map<String, Object> propsMap, String topicName) {
         this.kafkaProducer = new KafkaProducer<>(propsMap);
         this.topicName = topicName;
+    }
+
+    public void close() {
+        kafkaProducer.close();
     }
 
     public void publishMessageAsync(String key, String value) {
@@ -63,8 +69,5 @@ public class MessageProducer {
         } catch (ExecutionException e) {
             logger.error("Error sending message {} for the key {}. Message: {}", value, key, e.getMessage());
         }
-
-
     }
-
 }

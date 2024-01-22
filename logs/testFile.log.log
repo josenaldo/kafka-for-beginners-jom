@@ -2810,3 +2810,1635 @@ timestamp: 1705688686580
 15:29:38.140 [main] INFO  b.c.j.kfb.producer.MessageProducer - Metadata: [topic: test-topic, partition: 2, offset: 39, timestamp: 1705688978127]
 15:29:38.149 [main] INFO  b.c.j.kfb.producer.MessageProducer - Message Sending message 9 sent successfully for the key key2
 15:29:38.150 [main] INFO  b.c.j.kfb.producer.MessageProducer - Metadata: [topic: test-topic, partition: 2, offset: 40, timestamp: 1705688978141]
+20:57:53.841 [main] INFO  o.a.k.c.producer.ProducerConfig - ProducerConfig values: 
+	acks = -1
+	auto.include.jmx.reporter = true
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092, localhost:9093, localhost:9094]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+20:57:54.261 [main] INFO  o.a.k.clients.producer.KafkaProducer - [Producer clientId=producer-1] Instantiated an idempotent producer.
+20:57:54.530 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.6.1
+20:57:54.533 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 5e3c2b738d253ff5
+20:57:54.533 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1705708674525
+20:57:55.395 [kafka-producer-network-thread | producer-1] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Cluster ID: _cqEx5R1TkasDH0I5jJL7w
+20:57:55.439 [kafka-producer-network-thread | producer-1] INFO  o.a.k.c.p.i.TransactionManager - [Producer clientId=producer-1] ProducerId set to 2015 with epoch 0
+20:57:56.220 [main] INFO  b.c.j.kfb.producer.MessageProducer - Message Sending message 0 sent successfully for the key key2
+20:57:56.220 [main] INFO  b.c.j.kfb.producer.MessageProducer - Metadata: [topic: test-topic, partition: 2, offset: 41, timestamp: 1705708675395]
+20:57:56.275 [main] INFO  b.c.j.kfb.producer.MessageProducer - Message Sending message 1 sent successfully for the key key2
+20:57:56.275 [main] INFO  b.c.j.kfb.producer.MessageProducer - Metadata: [topic: test-topic, partition: 2, offset: 42, timestamp: 1705708676220]
+20:57:56.283 [main] INFO  b.c.j.kfb.producer.MessageProducer - Message Sending message 2 sent successfully for the key key2
+20:57:56.283 [main] INFO  b.c.j.kfb.producer.MessageProducer - Metadata: [topic: test-topic, partition: 2, offset: 43, timestamp: 1705708676275]
+20:57:56.291 [main] INFO  b.c.j.kfb.producer.MessageProducer - Message Sending message 3 sent successfully for the key key2
+20:57:56.291 [main] INFO  b.c.j.kfb.producer.MessageProducer - Metadata: [topic: test-topic, partition: 2, offset: 44, timestamp: 1705708676283]
+20:57:56.348 [main] INFO  b.c.j.kfb.producer.MessageProducer - Message Sending message 4 sent successfully for the key key2
+20:57:56.348 [main] INFO  b.c.j.kfb.producer.MessageProducer - Metadata: [topic: test-topic, partition: 2, offset: 45, timestamp: 1705708676291]
+20:57:56.359 [main] INFO  b.c.j.kfb.producer.MessageProducer - Message Sending message 5 sent successfully for the key key2
+20:57:56.359 [main] INFO  b.c.j.kfb.producer.MessageProducer - Metadata: [topic: test-topic, partition: 2, offset: 46, timestamp: 1705708676348]
+20:57:56.405 [main] INFO  b.c.j.kfb.producer.MessageProducer - Message Sending message 6 sent successfully for the key key2
+20:57:56.406 [main] INFO  b.c.j.kfb.producer.MessageProducer - Metadata: [topic: test-topic, partition: 2, offset: 47, timestamp: 1705708676359]
+20:57:56.411 [main] INFO  b.c.j.kfb.producer.MessageProducer - Message Sending message 7 sent successfully for the key key2
+20:57:56.411 [main] INFO  b.c.j.kfb.producer.MessageProducer - Metadata: [topic: test-topic, partition: 2, offset: 48, timestamp: 1705708676406]
+20:57:56.417 [main] INFO  b.c.j.kfb.producer.MessageProducer - Message Sending message 8 sent successfully for the key key2
+20:57:56.417 [main] INFO  b.c.j.kfb.producer.MessageProducer - Metadata: [topic: test-topic, partition: 2, offset: 49, timestamp: 1705708676412]
+20:57:56.432 [main] INFO  b.c.j.kfb.producer.MessageProducer - Message Sending message 9 sent successfully for the key key2
+20:57:56.432 [main] INFO  b.c.j.kfb.producer.MessageProducer - Metadata: [topic: test-topic, partition: 2, offset: 50, timestamp: 1705708676417]
+20:58:37.296 [main] INFO  b.c.j.kfb.producer.MessageProducer - Selected Option is : 1 
+20:58:52.397 [main] INFO  b.c.j.kfb.producer.MessageProducer - Entered message is teste cli
+20:58:52.462 [main] INFO  o.a.k.c.producer.ProducerConfig - ProducerConfig values: 
+	acks = -1
+	auto.include.jmx.reporter = true
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092, localhost:9093, localhost:9094]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+20:58:52.594 [main] INFO  o.a.k.clients.producer.KafkaProducer - [Producer clientId=producer-1] Instantiated an idempotent producer.
+20:58:52.787 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.6.1
+20:58:52.788 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 5e3c2b738d253ff5
+20:58:52.788 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1705708732783
+20:58:53.162 [kafka-producer-network-thread | producer-1] INFO  o.a.k.c.p.i.TransactionManager - [Producer clientId=producer-1] ProducerId set to 1009 with epoch 0
+20:58:55.463 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Error while fetching metadata with correlation id 2 : {test-topic-replicated=LEADER_NOT_AVAILABLE}
+20:58:55.464 [kafka-producer-network-thread | producer-1] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Cluster ID: _cqEx5R1TkasDH0I5jJL7w
+20:58:56.343 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Error while fetching metadata with correlation id 5 : {test-topic-replicated=LEADER_NOT_AVAILABLE}
+20:58:56.460 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Error while fetching metadata with correlation id 6 : {test-topic-replicated=LEADER_NOT_AVAILABLE}
+20:58:56.902 [kafka-producer-network-thread | producer-1] WARN  o.a.k.c.producer.internals.Sender - [Producer clientId=producer-1] Got error produce response with correlation id 9 on topic-partition test-topic-replicated-0, retrying (2147483646 attempts left). Error: UNKNOWN_TOPIC_OR_PARTITION
+20:58:56.903 [kafka-producer-network-thread | producer-1] WARN  o.a.k.c.producer.internals.Sender - [Producer clientId=producer-1] Received unknown topic or partition error in produce request on partition test-topic-replicated-0. The topic-partition may not exist or the user may not have Describe access to it
+20:58:57.010 [kafka-producer-network-thread | producer-1] WARN  o.a.k.c.producer.internals.Sender - [Producer clientId=producer-1] Got error produce response with correlation id 11 on topic-partition test-topic-replicated-0, retrying (2147483645 attempts left). Error: UNKNOWN_TOPIC_OR_PARTITION
+20:58:57.011 [kafka-producer-network-thread | producer-1] WARN  o.a.k.c.producer.internals.Sender - [Producer clientId=producer-1] Received unknown topic or partition error in produce request on partition test-topic-replicated-0. The topic-partition may not exist or the user may not have Describe access to it
+20:58:57.740 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Error while fetching metadata with correlation id 12 : {test-topic-replicated=LEADER_NOT_AVAILABLE}
+20:58:57.751 [main] INFO  b.c.j.kfb.producer.MessageProducer - Message teste cli sent successfully for the key null
+20:58:57.751 [main] INFO  b.c.j.kfb.producer.MessageProducer - Metadata: [topic: test-topic-replicated, partition: 0, offset: 0, timestamp: 1705708736567]
+20:58:57.752 [main] INFO  o.a.k.clients.producer.KafkaProducer - [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 9223372036854775807 ms.
+20:58:57.760 [main] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+20:58:57.760 [main] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+20:58:57.760 [main] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+20:58:57.761 [main] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.producer for producer-1 unregistered
+21:01:11.582 [main] INFO  b.c.j.kfb.producer.MessageProducer - Selected Option is : 1 
+21:01:14.622 [main] INFO  b.c.j.kfb.producer.MessageProducer - Entered message is coisa]
+21:01:14.701 [main] INFO  o.a.k.c.producer.ProducerConfig - ProducerConfig values: 
+	acks = -1
+	auto.include.jmx.reporter = true
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092, localhost:9093, localhost:9094]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+21:01:14.831 [main] INFO  o.a.k.clients.producer.KafkaProducer - [Producer clientId=producer-1] Instantiated an idempotent producer.
+21:01:15.025 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.6.1
+21:01:15.025 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 5e3c2b738d253ff5
+21:01:15.025 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1705708875022
+21:01:15.399 [kafka-producer-network-thread | producer-1] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Cluster ID: _cqEx5R1TkasDH0I5jJL7w
+21:01:15.403 [kafka-producer-network-thread | producer-1] INFO  o.a.k.c.p.i.TransactionManager - [Producer clientId=producer-1] ProducerId set to 18 with epoch 0
+21:01:15.440 [main] INFO  b.c.j.kfb.producer.MessageProducer - Message coisa] sent successfully for the key null
+21:01:15.440 [main] INFO  b.c.j.kfb.producer.MessageProducer - Metadata: [topic: test-topic-replicated, partition: 0, offset: 1, timestamp: 1705708875400]
+21:01:15.440 [main] INFO  o.a.k.clients.producer.KafkaProducer - [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 9223372036854775807 ms.
+21:01:15.449 [main] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+21:01:15.449 [main] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+21:01:15.449 [main] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+21:01:15.450 [main] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.producer for producer-1 unregistered
+21:01:32.814 [main] INFO  b.c.j.kfb.producer.MessageProducer - Entered message is outra coisa
+21:01:32.816 [main] INFO  o.a.k.c.producer.ProducerConfig - ProducerConfig values: 
+	acks = -1
+	auto.include.jmx.reporter = true
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092, localhost:9093, localhost:9094]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-2
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+21:01:32.820 [main] INFO  o.a.k.clients.producer.KafkaProducer - [Producer clientId=producer-2] Instantiated an idempotent producer.
+21:01:32.837 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.6.1
+21:01:32.838 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 5e3c2b738d253ff5
+21:01:32.838 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1705708892837
+21:01:32.845 [kafka-producer-network-thread | producer-2] INFO  o.a.k.c.p.i.TransactionManager - [Producer clientId=producer-2] ProducerId set to 19 with epoch 0
+21:01:32.846 [kafka-producer-network-thread | producer-2] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-2] Cluster ID: _cqEx5R1TkasDH0I5jJL7w
+21:01:32.852 [main] INFO  b.c.j.kfb.producer.MessageProducer - Message outra coisa sent successfully for the key null
+21:01:32.852 [main] INFO  b.c.j.kfb.producer.MessageProducer - Metadata: [topic: test-topic-replicated, partition: 0, offset: 2, timestamp: 1705708892846]
+21:01:32.852 [main] INFO  o.a.k.clients.producer.KafkaProducer - [Producer clientId=producer-2] Closing the Kafka producer with timeoutMillis = 9223372036854775807 ms.
+21:01:32.855 [main] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+21:01:32.855 [main] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+21:01:32.856 [main] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+21:01:32.856 [main] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.producer for producer-2 unregistered
+21:02:50.508 [main] INFO  b.c.j.kfb.producer.MessageProducer - Entered message is Mensagem
+21:02:50.511 [main] INFO  o.a.k.c.producer.ProducerConfig - ProducerConfig values: 
+	acks = -1
+	auto.include.jmx.reporter = true
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092, localhost:9093, localhost:9094]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-3
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+21:02:50.514 [main] INFO  o.a.k.clients.producer.KafkaProducer - [Producer clientId=producer-3] Instantiated an idempotent producer.
+21:02:50.538 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.6.1
+21:02:50.539 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 5e3c2b738d253ff5
+21:02:50.539 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1705708970538
+21:02:50.551 [kafka-producer-network-thread | producer-3] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-3] Cluster ID: _cqEx5R1TkasDH0I5jJL7w
+21:02:50.552 [kafka-producer-network-thread | producer-3] INFO  o.a.k.c.p.i.TransactionManager - [Producer clientId=producer-3] ProducerId set to 2016 with epoch 0
+21:02:50.562 [main] INFO  b.c.j.kfb.producer.MessageProducer - Message Mensagem sent successfully for the key null
+21:02:50.562 [main] INFO  b.c.j.kfb.producer.MessageProducer - Metadata: [topic: test-topic-replicated, partition: 0, offset: 3, timestamp: 1705708970552]
+21:02:50.563 [main] INFO  o.a.k.clients.producer.KafkaProducer - [Producer clientId=producer-3] Closing the Kafka producer with timeoutMillis = 9223372036854775807 ms.
+21:02:50.569 [main] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+21:02:50.569 [main] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+21:02:50.570 [main] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+21:02:50.570 [main] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.producer for producer-3 unregistered
+21:03:01.582 [main] INFO  b.c.j.kfb.producer.MessageProducer - Entered message is teste-mensagem
+21:03:01.584 [main] INFO  o.a.k.c.producer.ProducerConfig - ProducerConfig values: 
+	acks = -1
+	auto.include.jmx.reporter = true
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092, localhost:9093, localhost:9094]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-4
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+21:03:01.588 [main] INFO  o.a.k.clients.producer.KafkaProducer - [Producer clientId=producer-4] Instantiated an idempotent producer.
+21:03:01.610 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.6.1
+21:03:01.611 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 5e3c2b738d253ff5
+21:03:01.611 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1705708981610
+21:03:01.621 [kafka-producer-network-thread | producer-4] INFO  o.a.k.c.p.i.TransactionManager - [Producer clientId=producer-4] ProducerId set to 20 with epoch 0
+21:03:01.624 [kafka-producer-network-thread | producer-4] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-4] Cluster ID: _cqEx5R1TkasDH0I5jJL7w
+21:03:01.633 [main] INFO  b.c.j.kfb.producer.MessageProducer - Message mensagem sent successfully for the key teste
+21:03:01.633 [main] INFO  b.c.j.kfb.producer.MessageProducer - Metadata: [topic: test-topic-replicated, partition: 0, offset: 4, timestamp: 1705708981624]
+21:03:01.634 [main] INFO  o.a.k.clients.producer.KafkaProducer - [Producer clientId=producer-4] Closing the Kafka producer with timeoutMillis = 9223372036854775807 ms.
+21:03:01.638 [main] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+21:03:01.638 [main] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+21:03:01.638 [main] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+21:03:01.639 [main] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.producer for producer-4 unregistered
+21:03:08.622 [main] INFO  b.c.j.kfb.producer.MessageProducer - Entered message is teste-outracoisa
+21:03:08.623 [main] INFO  o.a.k.c.producer.ProducerConfig - ProducerConfig values: 
+	acks = -1
+	auto.include.jmx.reporter = true
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092, localhost:9093, localhost:9094]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-5
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+21:03:08.624 [main] INFO  o.a.k.clients.producer.KafkaProducer - [Producer clientId=producer-5] Instantiated an idempotent producer.
+21:03:08.628 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.6.1
+21:03:08.628 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 5e3c2b738d253ff5
+21:03:08.628 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1705708988628
+21:03:08.632 [kafka-producer-network-thread | producer-5] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-5] Cluster ID: _cqEx5R1TkasDH0I5jJL7w
+21:03:08.632 [kafka-producer-network-thread | producer-5] INFO  o.a.k.c.p.i.TransactionManager - [Producer clientId=producer-5] ProducerId set to 1010 with epoch 0
+21:03:08.638 [main] INFO  b.c.j.kfb.producer.MessageProducer - Message outracoisa sent successfully for the key teste
+21:03:08.639 [main] INFO  b.c.j.kfb.producer.MessageProducer - Metadata: [topic: test-topic-replicated, partition: 0, offset: 5, timestamp: 1705708988632]
+21:03:08.640 [main] INFO  o.a.k.clients.producer.KafkaProducer - [Producer clientId=producer-5] Closing the Kafka producer with timeoutMillis = 9223372036854775807 ms.
+21:03:08.645 [main] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+21:03:08.646 [main] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+21:03:08.646 [main] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+21:03:08.646 [main] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.producer for producer-5 unregistered
+21:04:12.162 [main] INFO  b.c.j.kfb.producer.MessageProducer - Entered message is 2222
+21:04:12.165 [main] INFO  o.a.k.c.producer.ProducerConfig - ProducerConfig values: 
+	acks = -1
+	auto.include.jmx.reporter = true
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092, localhost:9093, localhost:9094]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-6
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+21:04:12.168 [main] INFO  o.a.k.clients.producer.KafkaProducer - [Producer clientId=producer-6] Instantiated an idempotent producer.
+21:04:12.175 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.6.1
+21:04:12.175 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 5e3c2b738d253ff5
+21:04:12.175 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1705709052175
+21:04:12.182 [kafka-producer-network-thread | producer-6] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-6] Cluster ID: _cqEx5R1TkasDH0I5jJL7w
+21:04:12.183 [kafka-producer-network-thread | producer-6] INFO  o.a.k.c.p.i.TransactionManager - [Producer clientId=producer-6] ProducerId set to 2017 with epoch 0
+21:04:12.190 [main] INFO  b.c.j.kfb.producer.MessageProducer - Message 2222 sent successfully for the key null
+21:04:12.191 [main] INFO  b.c.j.kfb.producer.MessageProducer - Metadata: [topic: test-topic-replicated, partition: 0, offset: 6, timestamp: 1705709052182]
+21:04:12.191 [main] INFO  o.a.k.clients.producer.KafkaProducer - [Producer clientId=producer-6] Closing the Kafka producer with timeoutMillis = 9223372036854775807 ms.
+21:04:12.194 [main] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+21:04:12.195 [main] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+21:04:12.195 [main] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+21:04:12.195 [main] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.producer for producer-6 unregistered
+21:04:43.430 [main] INFO  b.c.j.kfb.producer.MessageProducer - Entered message is 00
+21:04:43.431 [main] INFO  b.c.j.kfb.producer.MessageProducer - Exiting from Option : 1 
+21:04:47.442 [main] INFO  b.c.j.kfb.producer.MessageProducer - Selected Option is : 2 
+16:11:18.577 [main] INFO  b.c.j.kfb.producer.MessageProducer - Selected Option is : 2 
+16:15:29.587 [main] INFO  b.c.j.kfb.producer.MessageProducer - Selected Option is : 2 
+16:17:41.621 [main] INFO  b.c.j.kfb.producer.MessageProducer - Selected Option is : 2 
+16:23:03.551 [main] INFO  o.a.k.c.producer.ProducerConfig - ProducerConfig values: 
+	acks = -1
+	auto.include.jmx.reporter = true
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092, localhost:9093, localhost:9094]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 10
+	retry.backoff.ms = 3000
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+16:23:03.740 [main] INFO  o.a.k.clients.producer.KafkaProducer - [Producer clientId=producer-1] Instantiated an idempotent producer.
+16:23:03.944 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.6.1
+16:23:03.947 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 5e3c2b738d253ff5
+16:23:03.947 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1705951383940
+16:23:04.636 [kafka-producer-network-thread | producer-1] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Cluster ID: _cqEx5R1TkasDH0I5jJL7w
+16:23:04.710 [kafka-producer-network-thread | producer-1] INFO  o.a.k.c.p.i.TransactionManager - [Producer clientId=producer-1] ProducerId set to 21 with epoch 0
+16:23:05.282 [main] INFO  b.c.j.kfb.producer.MessageProducer - Message Sending message 0 sent successfully for the key key2
+16:23:05.283 [main] INFO  b.c.j.kfb.producer.MessageProducer - Metadata: [topic: test-topic-replicated, partition: 0, offset: 7, timestamp: 1705951384637]
+16:23:05.318 [main] INFO  b.c.j.kfb.producer.MessageProducer - Message Sending message 1 sent successfully for the key key2
+16:23:05.319 [main] INFO  b.c.j.kfb.producer.MessageProducer - Metadata: [topic: test-topic-replicated, partition: 0, offset: 8, timestamp: 1705951385283]
+16:23:05.324 [main] INFO  b.c.j.kfb.producer.MessageProducer - Message Sending message 2 sent successfully for the key key2
+16:23:05.324 [main] INFO  b.c.j.kfb.producer.MessageProducer - Metadata: [topic: test-topic-replicated, partition: 0, offset: 9, timestamp: 1705951385319]
+16:23:05.330 [main] INFO  b.c.j.kfb.producer.MessageProducer - Message Sending message 3 sent successfully for the key key2
+16:23:05.331 [main] INFO  b.c.j.kfb.producer.MessageProducer - Metadata: [topic: test-topic-replicated, partition: 0, offset: 10, timestamp: 1705951385324]
+16:23:05.338 [main] INFO  b.c.j.kfb.producer.MessageProducer - Message Sending message 4 sent successfully for the key key2
+16:23:05.338 [main] INFO  b.c.j.kfb.producer.MessageProducer - Metadata: [topic: test-topic-replicated, partition: 0, offset: 11, timestamp: 1705951385331]
+16:23:05.342 [main] INFO  b.c.j.kfb.producer.MessageProducer - Message Sending message 5 sent successfully for the key key2
+16:23:05.343 [main] INFO  b.c.j.kfb.producer.MessageProducer - Metadata: [topic: test-topic-replicated, partition: 0, offset: 12, timestamp: 1705951385338]
+16:23:05.347 [main] INFO  b.c.j.kfb.producer.MessageProducer - Message Sending message 6 sent successfully for the key key2
+16:23:05.347 [main] INFO  b.c.j.kfb.producer.MessageProducer - Metadata: [topic: test-topic-replicated, partition: 0, offset: 13, timestamp: 1705951385343]
+16:23:05.351 [main] INFO  b.c.j.kfb.producer.MessageProducer - Message Sending message 7 sent successfully for the key key2
+16:23:05.352 [main] INFO  b.c.j.kfb.producer.MessageProducer - Metadata: [topic: test-topic-replicated, partition: 0, offset: 14, timestamp: 1705951385347]
+16:23:05.579 [main] INFO  b.c.j.kfb.producer.MessageProducer - Message Sending message 8 sent successfully for the key key2
+16:23:05.579 [main] INFO  b.c.j.kfb.producer.MessageProducer - Metadata: [topic: test-topic-replicated, partition: 0, offset: 15, timestamp: 1705951385352]
+16:23:05.583 [main] INFO  b.c.j.kfb.producer.MessageProducer - Message Sending message 9 sent successfully for the key key2
+16:23:05.584 [main] INFO  b.c.j.kfb.producer.MessageProducer - Metadata: [topic: test-topic-replicated, partition: 0, offset: 16, timestamp: 1705951385579]
+16:28:49.188 [main] INFO  b.c.j.kfb.producer.MessageProducer - Selected Option is : 2 
+18:57:56.494 [main] INFO  b.c.j.kfb.producer.MessageProducer - Selected Option is : 1 
+18:58:00.522 [main] INFO  b.c.j.kfb.producer.MessageProducer - Entered message is Oi
+18:58:00.652 [main] INFO  o.a.k.c.producer.ProducerConfig - ProducerConfig values: 
+	acks = -1
+	auto.include.jmx.reporter = true
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092, localhost:9093, localhost:9094]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 10
+	retry.backoff.ms = 3000
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+18:58:00.916 [main] INFO  o.a.k.clients.producer.KafkaProducer - [Producer clientId=producer-1] Instantiated an idempotent producer.
+18:58:01.207 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.6.1
+18:58:01.207 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 5e3c2b738d253ff5
+18:58:01.207 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1705960681202
+18:58:01.939 [kafka-producer-network-thread | producer-1] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Cluster ID: _cqEx5R1TkasDH0I5jJL7w
+18:58:01.955 [kafka-producer-network-thread | producer-1] INFO  o.a.k.c.p.i.TransactionManager - [Producer clientId=producer-1] ProducerId set to 1011 with epoch 0
+18:58:02.368 [kafka-producer-network-thread | producer-1] WARN  o.a.k.c.producer.internals.Sender - [Producer clientId=producer-1] Got error produce response with correlation id 4 on topic-partition test-topic-replicated-0, retrying (9 attempts left). Error: NOT_ENOUGH_REPLICAS
+18:58:05.368 [kafka-producer-network-thread | producer-1] WARN  o.a.k.c.producer.internals.Sender - [Producer clientId=producer-1] Got error produce response with correlation id 5 on topic-partition test-topic-replicated-0, retrying (8 attempts left). Error: NOT_ENOUGH_REPLICAS
+18:58:08.385 [kafka-producer-network-thread | producer-1] WARN  o.a.k.c.producer.internals.Sender - [Producer clientId=producer-1] Got error produce response with correlation id 6 on topic-partition test-topic-replicated-0, retrying (7 attempts left). Error: NOT_ENOUGH_REPLICAS
+18:58:11.402 [kafka-producer-network-thread | producer-1] WARN  o.a.k.c.producer.internals.Sender - [Producer clientId=producer-1] Got error produce response with correlation id 7 on topic-partition test-topic-replicated-0, retrying (6 attempts left). Error: NOT_ENOUGH_REPLICAS
+18:58:14.417 [kafka-producer-network-thread | producer-1] WARN  o.a.k.c.producer.internals.Sender - [Producer clientId=producer-1] Got error produce response with correlation id 8 on topic-partition test-topic-replicated-0, retrying (5 attempts left). Error: NOT_ENOUGH_REPLICAS
+18:58:17.427 [kafka-producer-network-thread | producer-1] WARN  o.a.k.c.producer.internals.Sender - [Producer clientId=producer-1] Got error produce response with correlation id 9 on topic-partition test-topic-replicated-0, retrying (4 attempts left). Error: NOT_ENOUGH_REPLICAS
+18:58:20.433 [kafka-producer-network-thread | producer-1] WARN  o.a.k.c.producer.internals.Sender - [Producer clientId=producer-1] Got error produce response with correlation id 10 on topic-partition test-topic-replicated-0, retrying (3 attempts left). Error: NOT_ENOUGH_REPLICAS
+18:58:23.438 [kafka-producer-network-thread | producer-1] WARN  o.a.k.c.producer.internals.Sender - [Producer clientId=producer-1] Got error produce response with correlation id 11 on topic-partition test-topic-replicated-0, retrying (2 attempts left). Error: NOT_ENOUGH_REPLICAS
+18:58:26.454 [kafka-producer-network-thread | producer-1] WARN  o.a.k.c.producer.internals.Sender - [Producer clientId=producer-1] Got error produce response with correlation id 12 on topic-partition test-topic-replicated-0, retrying (1 attempts left). Error: NOT_ENOUGH_REPLICAS
+18:58:29.474 [kafka-producer-network-thread | producer-1] WARN  o.a.k.c.producer.internals.Sender - [Producer clientId=producer-1] Got error produce response with correlation id 13 on topic-partition test-topic-replicated-0, retrying (0 attempts left). Error: NOT_ENOUGH_REPLICAS
+18:58:32.487 [main] ERROR b.c.j.kfb.producer.MessageProducer - Error sending message Oi for the key null. Message: org.apache.kafka.common.errors.NotEnoughReplicasException: Messages are rejected since there are fewer in-sync replicas than required.
+18:58:32.488 [main] INFO  o.a.k.clients.producer.KafkaProducer - [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 9223372036854775807 ms.
+18:58:32.510 [main] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+18:58:32.510 [main] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+18:58:32.511 [main] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+18:58:32.511 [main] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.producer for producer-1 unregistered
+18:58:32.512 [main] INFO  b.c.j.kfb.producer.MessageProducer - Entered message is 
+18:58:32.513 [main] INFO  o.a.k.c.producer.ProducerConfig - ProducerConfig values: 
+	acks = -1
+	auto.include.jmx.reporter = true
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092, localhost:9093, localhost:9094]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-2
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 10
+	retry.backoff.ms = 3000
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+18:58:32.515 [main] INFO  o.a.k.clients.producer.KafkaProducer - [Producer clientId=producer-2] Instantiated an idempotent producer.
+18:58:32.529 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.6.1
+18:58:32.529 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 5e3c2b738d253ff5
+18:58:32.529 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1705960712529
+18:58:32.530 [main] INFO  o.a.k.clients.producer.KafkaProducer - [Producer clientId=producer-2] Closing the Kafka producer with timeoutMillis = 9223372036854775807 ms.
+18:58:32.535 [kafka-producer-network-thread | producer-2] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-2] Cluster ID: _cqEx5R1TkasDH0I5jJL7w
+18:58:32.535 [kafka-producer-network-thread | producer-2] INFO  o.a.k.c.p.i.TransactionManager - [Producer clientId=producer-2] ProducerId set to 1012 with epoch 0
+18:58:32.539 [main] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+18:58:32.540 [main] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+18:58:32.540 [main] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+18:58:32.541 [main] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.producer for producer-2 unregistered
+18:59:18.184 [main] INFO  b.c.j.kfb.producer.MessageProducer - Entered message is teste
+18:59:18.187 [main] INFO  o.a.k.c.producer.ProducerConfig - ProducerConfig values: 
+	acks = -1
+	auto.include.jmx.reporter = true
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092, localhost:9093, localhost:9094]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-3
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 10
+	retry.backoff.ms = 3000
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+18:59:18.192 [main] INFO  o.a.k.clients.producer.KafkaProducer - [Producer clientId=producer-3] Instantiated an idempotent producer.
+18:59:18.220 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.6.1
+18:59:18.222 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 5e3c2b738d253ff5
+18:59:18.223 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1705960758220
+18:59:18.237 [kafka-producer-network-thread | producer-3] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-3] Cluster ID: _cqEx5R1TkasDH0I5jJL7w
+18:59:24.267 [kafka-producer-network-thread | producer-3] INFO  o.a.k.c.p.i.TransactionManager - [Producer clientId=producer-3] ProducerId set to 4000 with epoch 0
+18:59:24.293 [kafka-producer-network-thread | producer-3] WARN  o.a.k.c.producer.internals.Sender - [Producer clientId=producer-3] Got error produce response with correlation id 7 on topic-partition test-topic-replicated-0, retrying (9 attempts left). Error: NOT_ENOUGH_REPLICAS
+18:59:27.314 [kafka-producer-network-thread | producer-3] WARN  o.a.k.c.producer.internals.Sender - [Producer clientId=producer-3] Got error produce response with correlation id 8 on topic-partition test-topic-replicated-0, retrying (8 attempts left). Error: NOT_ENOUGH_REPLICAS
+18:59:30.319 [kafka-producer-network-thread | producer-3] WARN  o.a.k.c.producer.internals.Sender - [Producer clientId=producer-3] Got error produce response with correlation id 9 on topic-partition test-topic-replicated-0, retrying (7 attempts left). Error: NOT_ENOUGH_REPLICAS
+18:59:33.327 [kafka-producer-network-thread | producer-3] WARN  o.a.k.c.producer.internals.Sender - [Producer clientId=producer-3] Got error produce response with correlation id 10 on topic-partition test-topic-replicated-0, retrying (6 attempts left). Error: NOT_ENOUGH_REPLICAS
+18:59:36.338 [kafka-producer-network-thread | producer-3] WARN  o.a.k.c.producer.internals.Sender - [Producer clientId=producer-3] Got error produce response with correlation id 11 on topic-partition test-topic-replicated-0, retrying (5 attempts left). Error: NOT_ENOUGH_REPLICAS
+18:59:39.347 [kafka-producer-network-thread | producer-3] WARN  o.a.k.c.producer.internals.Sender - [Producer clientId=producer-3] Got error produce response with correlation id 12 on topic-partition test-topic-replicated-0, retrying (4 attempts left). Error: NOT_ENOUGH_REPLICAS
+18:59:42.364 [kafka-producer-network-thread | producer-3] WARN  o.a.k.c.producer.internals.Sender - [Producer clientId=producer-3] Got error produce response with correlation id 13 on topic-partition test-topic-replicated-0, retrying (3 attempts left). Error: NOT_ENOUGH_REPLICAS
+18:59:45.381 [kafka-producer-network-thread | producer-3] WARN  o.a.k.c.producer.internals.Sender - [Producer clientId=producer-3] Got error produce response with correlation id 14 on topic-partition test-topic-replicated-0, retrying (2 attempts left). Error: NOT_ENOUGH_REPLICAS
+18:59:48.390 [kafka-producer-network-thread | producer-3] WARN  o.a.k.c.producer.internals.Sender - [Producer clientId=producer-3] Got error produce response with correlation id 15 on topic-partition test-topic-replicated-0, retrying (1 attempts left). Error: NOT_ENOUGH_REPLICAS
+18:59:51.409 [kafka-producer-network-thread | producer-3] WARN  o.a.k.c.producer.internals.Sender - [Producer clientId=producer-3] Got error produce response with correlation id 16 on topic-partition test-topic-replicated-0, retrying (0 attempts left). Error: NOT_ENOUGH_REPLICAS
+18:59:52.950 [kafka-producer-network-thread | producer-3] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-3] Node 2 disconnected.
+18:59:56.441 [kafka-producer-network-thread | producer-3] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-3] Node 2 disconnected.
+18:59:56.441 [kafka-producer-network-thread | producer-3] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-3] Connection to node 2 (PC-JOM/10.212.135.2:9094) could not be established. Broker may not be available.
+19:00:14.564 [main] ERROR b.c.j.kfb.producer.MessageProducer - Error sending message teste for the key null. Message: org.apache.kafka.common.errors.NotEnoughReplicasException: Messages are rejected since there are fewer in-sync replicas than required.
+19:00:14.565 [main] INFO  o.a.k.clients.producer.KafkaProducer - [Producer clientId=producer-3] Closing the Kafka producer with timeoutMillis = 9223372036854775807 ms.
+19:00:14.568 [main] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+19:00:14.569 [main] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+19:00:14.569 [main] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+19:00:14.569 [main] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.producer for producer-3 unregistered
+19:23:54.656 [main] INFO  b.c.j.kfb.producer.MessageProducer - Selected Option is : 1 
+19:24:01.701 [main] INFO  b.c.j.kfb.producer.MessageProducer - Entered message is Ola
+19:24:01.810 [main] INFO  o.a.k.c.producer.ProducerConfig - ProducerConfig values: 
+	acks = -1
+	auto.include.jmx.reporter = true
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092, localhost:9093, localhost:9094]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 10
+	retry.backoff.ms = 3000
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+19:24:01.982 [main] INFO  o.a.k.clients.producer.KafkaProducer - [Producer clientId=producer-1] Instantiated an idempotent producer.
+19:24:02.193 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.6.1
+19:24:02.193 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 5e3c2b738d253ff5
+19:24:02.193 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1705962242188
+19:24:02.848 [kafka-producer-network-thread | producer-1] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Cluster ID: TU5WzKwJRU6F7pftybL0kQ
+19:24:05.860 [kafka-producer-network-thread | producer-1] INFO  o.a.k.c.p.i.TransactionManager - [Producer clientId=producer-1] ProducerId set to 0 with epoch 0
+19:24:05.979 [main] INFO  b.c.j.kfb.producer.MessageProducer - Message Ola sent successfully for the key null
+19:24:05.980 [main] INFO  b.c.j.kfb.producer.MessageProducer - Metadata: [topic: test-topic-replicated, partition: 2, offset: 0, timestamp: 1705962242849]
+19:24:05.980 [main] INFO  o.a.k.clients.producer.KafkaProducer - [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 9223372036854775807 ms.
+19:24:05.990 [main] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+19:24:05.990 [main] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+19:24:05.990 [main] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+19:24:05.990 [main] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.producer for producer-1 unregistered
+19:24:42.030 [main] INFO  b.c.j.kfb.producer.MessageProducer - Entered message is Ola de novo
+19:24:42.032 [main] INFO  o.a.k.c.producer.ProducerConfig - ProducerConfig values: 
+	acks = -1
+	auto.include.jmx.reporter = true
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092, localhost:9093, localhost:9094]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-2
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 10
+	retry.backoff.ms = 3000
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+19:24:42.033 [main] INFO  o.a.k.clients.producer.KafkaProducer - [Producer clientId=producer-2] Instantiated an idempotent producer.
+19:24:42.040 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.6.1
+19:24:42.040 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 5e3c2b738d253ff5
+19:24:42.040 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1705962282040
+19:24:42.044 [kafka-producer-network-thread | producer-2] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-2] Node -3 disconnected.
+19:24:42.045 [kafka-producer-network-thread | producer-2] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-2] Connection to node -3 (localhost/127.0.0.1:9094) could not be established. Broker may not be available.
+19:24:42.045 [kafka-producer-network-thread | producer-2] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-2] Bootstrap broker localhost:9094 (id: -3 rack: null) disconnected
+19:24:48.084 [kafka-producer-network-thread | producer-2] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-2] Cluster ID: TU5WzKwJRU6F7pftybL0kQ
+19:24:51.123 [kafka-producer-network-thread | producer-2] INFO  o.a.k.c.p.i.TransactionManager - [Producer clientId=producer-2] ProducerId set to 1 with epoch 0
+19:24:51.176 [main] INFO  b.c.j.kfb.producer.MessageProducer - Message Ola de novo sent successfully for the key null
+19:24:51.176 [main] INFO  b.c.j.kfb.producer.MessageProducer - Metadata: [topic: test-topic-replicated, partition: 1, offset: 0, timestamp: 1705962288085]
+19:24:51.176 [main] INFO  o.a.k.clients.producer.KafkaProducer - [Producer clientId=producer-2] Closing the Kafka producer with timeoutMillis = 9223372036854775807 ms.
+19:24:51.179 [main] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+19:24:51.180 [main] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+19:24:51.180 [main] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+19:24:51.180 [main] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.producer for producer-2 unregistered
+19:25:10.286 [main] INFO  b.c.j.kfb.producer.MessageProducer - Entered message is Ola
+19:25:10.289 [main] INFO  o.a.k.c.producer.ProducerConfig - ProducerConfig values: 
+	acks = -1
+	auto.include.jmx.reporter = true
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092, localhost:9093, localhost:9094]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-3
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 10
+	retry.backoff.ms = 3000
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+19:25:10.291 [main] INFO  o.a.k.clients.producer.KafkaProducer - [Producer clientId=producer-3] Instantiated an idempotent producer.
+19:25:10.306 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.6.1
+19:25:10.306 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 5e3c2b738d253ff5
+19:25:10.306 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1705962310306
+19:25:10.309 [kafka-producer-network-thread | producer-3] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-3] Node -3 disconnected.
+19:25:10.309 [kafka-producer-network-thread | producer-3] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-3] Connection to node -3 (localhost/127.0.0.1:9094) could not be established. Broker may not be available.
+19:25:10.309 [kafka-producer-network-thread | producer-3] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-3] Bootstrap broker localhost:9094 (id: -3 rack: null) disconnected
+19:25:16.332 [kafka-producer-network-thread | producer-3] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-3] Cluster ID: TU5WzKwJRU6F7pftybL0kQ
+19:25:16.333 [kafka-producer-network-thread | producer-3] INFO  o.a.k.c.p.i.TransactionManager - [Producer clientId=producer-3] ProducerId set to 1000 with epoch 0
+19:25:16.350 [kafka-producer-network-thread | producer-3] WARN  o.a.k.c.producer.internals.Sender - [Producer clientId=producer-3] Got error produce response with correlation id 4 on topic-partition test-topic-replicated-0, retrying (9 attempts left). Error: NOT_ENOUGH_REPLICAS
+19:25:19.368 [kafka-producer-network-thread | producer-3] WARN  o.a.k.c.producer.internals.Sender - [Producer clientId=producer-3] Got error produce response with correlation id 5 on topic-partition test-topic-replicated-0, retrying (8 attempts left). Error: NOT_ENOUGH_REPLICAS
+19:25:22.382 [kafka-producer-network-thread | producer-3] WARN  o.a.k.c.producer.internals.Sender - [Producer clientId=producer-3] Got error produce response with correlation id 6 on topic-partition test-topic-replicated-0, retrying (7 attempts left). Error: NOT_ENOUGH_REPLICAS
+19:25:25.392 [kafka-producer-network-thread | producer-3] WARN  o.a.k.c.producer.internals.Sender - [Producer clientId=producer-3] Got error produce response with correlation id 7 on topic-partition test-topic-replicated-0, retrying (6 attempts left). Error: NOT_ENOUGH_REPLICAS
+19:25:28.418 [main] INFO  b.c.j.kfb.producer.MessageProducer - Message Ola sent successfully for the key null
+19:25:28.419 [main] INFO  b.c.j.kfb.producer.MessageProducer - Metadata: [topic: test-topic-replicated, partition: 0, offset: 0, timestamp: 1705962316333]
+19:25:28.419 [main] INFO  o.a.k.clients.producer.KafkaProducer - [Producer clientId=producer-3] Closing the Kafka producer with timeoutMillis = 9223372036854775807 ms.
+19:25:28.421 [main] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+19:25:28.421 [main] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+19:25:28.422 [main] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+19:25:28.422 [main] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.producer for producer-3 unregistered
