@@ -1,12 +1,8 @@
 
-S
-#src/main/java/org/example/Main.java,0\b\0ba1b9c7a4878802f938e331cc2d8a042087ec6b
 @
 build.gradle.kts,d\b\dbcff70658daf80b53ce624f6adcaa529df5ed8d
 J
 producers/build.gradle.kts,6\1\613d7a74df6d81682f147cb18f854820891af7d6
-]
--producers/src/main/java/org/example/Main.java,e\e\ee39aa32a170ff5784d6df60cda16e6622336fd1
 C
 settings.gradle.kts,7\4\749edfcc96398253e5b3416184e95c46621da850
 w
@@ -38,8 +34,6 @@ w
 G.idea/sonarlint/issuestore/6/1/613d7a74df6d81682f147cb18f854820891af7d6,1\c\1cbd52fcdb551150fac35facee8012a585f99c23
 X
 (gradle/wrapper/gradle-wrapper.properties,f\b\fbe448ebfc3eb2d4e308f6b8b043666f5b57235e
-e
-5src/main/java/br/com/josenaldo/kfb/producer/Main.java,c\f\cfefd38f77794330aaaf997e0e093b40668212fa
 o
 ?producers/src/main/java/br/com/josenaldo/kfb/producer/Main.java,0\f\0f8f8d6bf0c1ecc8e7ef59998c3fdddbac3ecec9
 z
@@ -56,3 +50,13 @@ E
 Nproducers/src/main/java/br/com/josenaldo/kfb/launcher/CommandLineLauncher.java,1\9\19e892cb4232212de75700a8a9b68574d099dcdb
 ~
 Nproducers/src/main/java/br/com/josenaldo/kfb/launcher/CommandLineMessages.java,2\e\2ea19be78ead9dca1237ba36c4f1737984f845dd
+I
+consumer/build.gradle.kts,c\d\cd24eadeff00eec02dde0d732ccbd9d527ddbff4
+n
+>consumer/src/main/java/br/com/josenaldo/kfb/consumer/Main.java,6\6\66e92fb143f988669e7438e73fa49eaf9fae9afd
+y
+Iconsumer/src/main/java/br/com/josenaldo/kfb/consumer/MessageConsumer.java,1\d\1dc9be29bbba431ab47181c90d9d454f246b72a5
+w
+Gproducers/src/main/java/br/com/josenaldo/kfb/producer/MainProducer.java,5\2\52a471f6e8d4ce4b1d187a01bfa4478247e7786f
+v
+Fconsumer/src/main/java/br/com/josenaldo/kfb/consumer/MainConsumer.java,b\4\b4235d8159b4e735da1a6d595ec912392390e9aa

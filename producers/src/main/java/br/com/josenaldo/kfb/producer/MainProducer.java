@@ -1,6 +1,6 @@
 package br.com.josenaldo.kfb.producer;
 
-public class Main {
+public class MainProducer {
 
     public static void main(String[] args) throws InterruptedException {
         MessageProducer messageProducer = new MessageProducer(MessageProducer.propsMap(), "test-topic-replicated");
